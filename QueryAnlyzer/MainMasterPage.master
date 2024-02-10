@@ -1,0 +1,42 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<%@ Register Src="UserControls/ucFooterCtrl.ascx" TagName="ucFooterCtrl" TagPrefix="uc4" %>
+<%@ Register Src="UserControls/HeaderAdRotator.ascx" TagName="HeaderAdRotator" TagPrefix="uc3" %>
+<%@ Register Src="UserControls/Headerl.ascx" TagName="Headerl" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>QUERY ANALYZER AND SOLUTION PROVIDER APPLICATION</title>
+</head>
+<body style="margin:0">
+    <form id="form1" runat="server" backcolor="#f5fffa" >
+    <div style="text-align:center;">
+       <table style="width: 1197px" >
+            <tr>
+                <td colspan="4" style="text-align:center"  >
+                    <uc1:Headerl ID="Headerl1" runat="server" />
+                    
+                </td>
+            </tr>
+           <tr>
+               <td colspan="4" 
+                   style="text-align: center; vertical-align:top; background-color:#f5fffa">
+                 
+                <div style="min-height:400px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                    &nbsp;</td>
+           </tr>
+            <tr>
+                <td colspan="4" style="background-color:#C0C0FF" >
+                    <uc4:ucFooterCtrl ID="UcFooterCtrl1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

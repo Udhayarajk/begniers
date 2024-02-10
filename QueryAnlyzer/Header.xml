@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HHeaderLinks>
+  <Link>
+    <id>1</id>
+    <Name>Home</Name>
+    <Operations>~/HomePage.aspx</Operations>
+  </Link>
+  <Link>
+    <id>2</id>
+    <Name>Employee Login</Name>
+    <Operations>~/Login.aspx</Operations>
+  </Link>
+  <Link>
+    <id>3</id>
+    <Name>Customers</Name>
+    <Operations>~/CustomerPages/CCHome.aspx</Operations>
+  </Link>
+ 
+ 
+</HHeaderLinks>
